@@ -1,3 +1,24 @@
 body{
     text-align: center;
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://cdn.stocksnap.io/img-thumbs/960w/books-reading_2XTL98GVVF.jpg');
+    backdrop-filter: blur(3px);
+}
+
+div{
+    box-shadow: 8px 10px 8px 10px rgb(45, 31, 0);
+    border-radius: 25px;
+    margin: 170px 300px;
+    padding: 50px;
+    backdrop-filter: blur(8px);
+}
+
+input{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px;
+    box-sizing: border-box;
 }
