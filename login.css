@@ -1,11 +1,10 @@
 body{
     text-align: center;
     font-size: 30px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('https://cdn.stocksnap.io/img-thumbs/960w/books-reading_2XTL98GVVF.jpg');
-    backdrop-filter: blur(3px);
 }
 
 div{
