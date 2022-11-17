@@ -37,8 +37,8 @@
             if ($db->connect_errno > 0) {
                 die('Unable to connect to database [' . $db->connect_error . ']');
             } else {
-                $user = strval($_POST["user"])."\n"; //turn into string taken from https://www.geeksforgeeks.org/php-strval-function/#:~:text=The%20strval()%20function%20is,or%20double)%20to%20a%20string.
-                $pass = strval($_POST["pass"])."\n";
+                $user = $_POST["user"]; //turn into string taken from https://www.geeksforgeeks.org/php-strval-function/#:~:text=The%20strval()%20function%20is,or%20double)%20to%20a%20string.
+                $pass = $_POST["pass"];
                 // echo("<p>Connection to " . $db_name . " was established successfully.</p>");
                 // CREATE TABLE MESSAGES (ID int NOT NULL AUTO_INCREMENT, NAME varchar(20), MSG varchar(255), PRIMARY KEY (ID));
                 $sql_insert = "INSERT INTO loginTable (username, pass) ".
