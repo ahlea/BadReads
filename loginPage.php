@@ -47,6 +47,10 @@
             $db->close();
             echo("<p>Connection to " . $db_name . " was closed.</p>");
         }
+        
+        if (isset($_POST["submitLogin"])){
+            //we will check password and usename
+        }
         ?>
 </body>
 </html>
