@@ -30,8 +30,6 @@
             $db_user = "AHLEA";
             $db_passwd = "Lindsey";
 
-            //$name = "Lindsey Arndt";
-
             $db = new mysqli("localhost", $db_user, $db_passwd, $db_name);
                           // db location,      user,    passwd, database
             if ($db->connect_errno > 0) {
