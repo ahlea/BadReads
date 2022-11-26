@@ -67,7 +67,7 @@
 
                 if ($result->num_rows > 0) {
                 // output data of each row
-                while($row = $result->fetch_assoc()) {
+                while($row = $result->fetch_assoc()) { //info about query"https://www.w3schools.com/php/php_mysql_select.asp
                     echo "username: " . $row["username"]. " - pass: " . $row["pass"]. " " . "<br>";
                     if($row["username"] == $user && $row["pass"] == $pass){
                         echo "You can sign in";
@@ -76,9 +76,9 @@
                 } else {
                 echo "0 results";
                 }
-                }   
-            $db->close();
-            echo("<p>Connection to " . $db_name . " was closed.</p>");
+            }   
+                $db->close();
+                echo("<p>Connection to " . $db_name . " was closed.</p>");
         }
         ?>
 </body>
