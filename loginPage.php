@@ -11,7 +11,7 @@
         <div>
              <h1>Book Talk Login</h1>
 
-        <form action="login.php" method="POST">
+        <form action="loginPage.php" method="POST">
             <input placeholder="Username" type="text" name="user" value=""><br>
             <input placeholder="Password" type="password" name="pass" value=""><br>
             <!-- <input type="button" name="inputPasswdButton" value="Login" onclick="readPasswd();"> -->
