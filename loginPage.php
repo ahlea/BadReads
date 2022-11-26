@@ -37,12 +37,28 @@
             } else {
                 $user = $_POST["user"]; //turn into string taken from https://www.geeksforgeeks.org/php-strval-function/#:~:text=The%20strval()%20function%20is,or%20double)%20to%20a%20string.
                 $pass = $_POST["pass"];
-                // echo("<p>Connection to " . $db_name . " was established successfully.</p>");
-                // CREATE TABLE MESSAGES (ID int NOT NULL AUTO_INCREMENT, NAME varchar(20), MSG varchar(255), PRIMARY KEY (ID));
-                $sql_insert = "INSERT INTO loginTable (username, pass) ".
-                "VALUES ('" . $user . "', '" . $pass . "')"; //syntax
 
-                $db->query($sql_insert) or die('Sorry, database operation was failed');
+                $check = 0; //if this is >0 then there is already a usersame with that user input
+
+                $sql = "SELECT username FROM loginTable";
+                $result = $db->query($sql);
+
+                if ($result->num_rows > 0) {
+                    // output data of each row
+                    while($row = $result->fetch_assoc()) { //info about query"https://www.w3schools.com/php/php_mysql_select.asp
+                        echo "username: " . $row["username"]. "<br>";
+                        if($row["username"] == $user){
+                            $check = 1;
+                            echo '<script>alert("Username already exists")</script>';
+                        }
+                    }
+                }
+                if($check == 0 ){
+                    $sql_insert = "INSERT INTO loginTable (username, pass) ".
+                    "VALUES ('" . $user . "', '" . $pass . "')"; //syntax
+
+                    $db->query($sql_insert) or die('Sorry, database operation was failed');
+                }
             }
             $db->close();
             echo("<p>Connection to " . $db_name . " was closed.</p>");
@@ -80,6 +96,7 @@
                 $db->close();
                 echo("<p>Connection to " . $db_name . " was closed.</p>");
         }
+
         ?>
         
 </body>
