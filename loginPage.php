@@ -49,7 +49,7 @@
         }
         
         if (isset($_POST["submitLogin"])){
-            echo("<p> submit login clicked</p>");
+            
         }
         ?>
 </body>
