@@ -68,7 +68,10 @@
                 if ($result->num_rows > 0) {
                 // output data of each row
                 while($row = $result->fetch_assoc()) {
-                echo "username: " . $row["username"]. " - pass: " . $row["pass"]. " " . "<br>";
+                    echo "username: " . $row["username"]. " - pass: " . $row["pass"]. " " . "<br>";
+                    if($row["username"] == $user && $row["pass"] == $pass){
+                        echo "You can sign in";
+                    }
                 }
                 } else {
                 echo "0 results";
