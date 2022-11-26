@@ -49,7 +49,33 @@
         }
         
         if (isset($_POST["submitLogin"])){
-            
+            $db_name = "CS344F22BADREADS";
+            $db_user = "AHLEA";
+            $db_passwd = "Lindsey";
+
+            $db = new mysqli("localhost", $db_user, $db_passwd, $db_name);
+                          // db location,      user,    passwd, database
+            if ($db->connect_errno > 0) {
+                die('Unable to connect to database [' . $db->connect_error . ']');
+            } else {
+                $user = $_POST["user"]; //turn into string taken from https://www.geeksforgeeks.org/php-strval-function/#:~:text=The%20strval()%20function%20is,or%20double)%20to%20a%20string.
+                $pass = $_POST["pass"];
+                // echo("<p>Connection to " . $db_name . " was established successfully.</p>");
+                // CREATE TABLE MESSAGES (ID int NOT NULL AUTO_INCREMENT, NAME varchar(20), MSG varchar(255), PRIMARY KEY (ID));
+                $sql = "SELECT username, pass FROM loginTable";
+                $result = $db->query($sql);
+
+                if ($result->num_rows > 0) {
+                // output data of each row
+                while($row = $result->fetch_assoc()) {
+                echo "username: " . $row["username"]. " - pass: " . $row["pass"]. " " . "<br>";
+                }
+                } else {
+                echo "0 results";
+                }
+                }   
+            $db->close();
+            echo("<p>Connection to " . $db_name . " was closed.</p>");
         }
         ?>
 </body>
