@@ -49,7 +49,7 @@
         }
         
         if (isset($_POST["submitLogin"])){
-            //we will check password and usename
+            echo("<p> submit login clicked</p>");
         }
         ?>
 </body>
