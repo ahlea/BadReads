@@ -69,6 +69,7 @@
             $db_user = "AHLEA";
             $db_passwd = "Lindsey";
 
+            $check = 0; //check will be >0 if the username is correct and the password does not match
             $db = new mysqli("localhost", $db_user, $db_passwd, $db_name);
                           // db location,      user,    passwd, database
             if ($db->connect_errno > 0) {
@@ -85,8 +86,14 @@
                 // output data of each row
                 while($row = $result->fetch_assoc()) { //info about query"https://www.w3schools.com/php/php_mysql_select.asp
                     echo "username: " . $row["username"]. " - pass: " . $row["pass"]. " " . "<br>";
-                    if($row["username"] == $user && $row["pass"] == $pass){
-                        echo "You can sign in";
+                    if($row["username"] == $user){
+                        $check = 1;
+                        if($row["pass"] != $pass){
+                            echo '<script>alert("Username does not match password")</script>';
+                        }
+                        else{
+                            echo "you are able to sign in";
+                        }
                     }
                 }
                 } else {
