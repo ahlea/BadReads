@@ -81,5 +81,6 @@
                 echo("<p>Connection to " . $db_name . " was closed.</p>");
         }
         ?>
+        
 </body>
 </html>
