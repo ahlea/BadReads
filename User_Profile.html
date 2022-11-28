@@ -1,2 +1,49 @@
-<html>
-  
+<!DOCTYPE html>
+
+<html lang = "en">
+
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="author" content="Karis Plath">
+
+        <title> Profile </title>
+
+        <link rel="stylesheet" href="Profile.css">
+    </head>
+
+    <body>
+
+      <header>
+        <h1>Username</h1>
+      </header>
+
+        <div class = "username">
+
+        </div>
+
+        <div class="tab">
+            <button class="tablinks" onclick="open(event, 'Reading')">Reading</button>
+            <button class="tablinks" onclick="open(event, 'Read')">Read</button>
+            <button class="tablinks" onclick="open(event, 'Wishlist')">Wishlist</button>
+          </div>
+          
+          <div id="Reading" class="tabcontent">
+            <h3>Reading</h3>
+            <p>Curently Reading</p>
+          </div>
+          
+          <div id="Read" class="tabcontent">
+            <h3>Read</h3>
+            <p>Already Read</p>
+          </div>
+          
+          <div id="Wishlist" class="tabcontent">
+            <h3>Wishlist</h3>
+            <p>Want to Read</p>
+          </div>
+        </div>
+        
+    </body>
+
+</html>
