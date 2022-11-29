@@ -52,9 +52,9 @@
                             echo '<script>alert("No books titles match that search")</script>';
                         }
                         else{
-                            echo "directing you to the book info page";
-                            header("Location: bookInfo.php");
-                            exit();
+                            //echo "directing you to the book info page";
+                            //header("Location: bookInfo.php");
+                            //exit();
                         }
                     }
                 }
@@ -63,7 +63,7 @@
                 }
             }   
                 $db->close();
-                echo("<p>Connection to " . $db_name . " closed.</p>");
+                //echo("<p>Connection to " . $db_name . " closed.</p>");
         }
 
         ?>
