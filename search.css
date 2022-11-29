@@ -1,0 +1,29 @@
+.search_result {
+    color: #D06C53;
+    text-align: center;
+}
+
+.search_result a {
+    color: #9BA06A;
+}
+
+.search-box {
+    position: absolute;
+    top: 40%;
+    left: 22%;
+}
+
+.search-box button {
+    height: 32px;
+    width: 32px;
+    margin-left: -5px;
+    background: #848484;
+    font-size: 17px;
+    border: none;
+}
+
+.search-box input[type=text] {
+    height: 26px;
+    font-size: 17px;
+    width: 50vw;
+}
