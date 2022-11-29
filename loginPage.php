@@ -47,7 +47,6 @@
                     // output data of each row
                     while($row = $result->fetch_assoc()) { //info about query"https://www.w3schools.com/php/php_mysql_select.asp
                         echo "username: " . $row["username"]. "<br>";
-                        $_SESSION["username"] = $_POST["user"];
                         if($row["username"] == $user){
                             $check = 1;
                             echo '<script>alert("Username already exists")</script>';
@@ -59,6 +58,8 @@
                     "VALUES ('" . $user . "', '" . $pass . "')"; //syntax
 
                     $db->query($sql_insert) or die('Sorry, database operation was failed');
+                    header("Location:booksearch.html");
+                    exit();
                 }
             }
             $db->close();
@@ -94,7 +95,8 @@
                         }
                         else{
                             echo "you are able to sign in";
-                            $_SESSION["username"] = $_POST["user"];
+                            header("Location:booksearch.html");
+                            exit();
                         }
                     }
                 }
