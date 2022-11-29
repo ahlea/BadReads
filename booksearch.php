@@ -29,20 +29,20 @@
 
             $check = 0;
             $db = new mysqli("localhost", $db_user, $db_passwd, $db_name);
-                          // db location,      user,    passwd, database
+                          // db location,   user,    passwd,    database
             if ($db->connect_errno > 0) {
                 die('Unable to connect to database [' . $db->connect_error . ']');
             } else {
-                $searchBox = $_POST["searchBox"];
-                $sql = "SELECT id FROM Book Search";
+                $searchBox = $_POST["Title"];
+                $sql = "SELECT * FROM Book Search";
                 $result = $db->query($sql);
 
-                if ($result->num_rows > 0) {       //ASK LINDSEY
+                if ($result->num_rows > 0) {
                 while($row = $result->fetch_assoc()) {
-//                    echo "username: " . $row["username"]. " - pass: " . $row["pass"]. " " . "<br>";
-                    if($row["id"] == $Title){
+					echo "Title: ". $row["Title"]. "<br>";
+                    if($row["Title"] == $Title){
                         $check = 1;
-                        if($row["id"] != $Title){
+                        if($row["Title"] != $Title){
                             echo '<script>alert("No books titles match that search")</script>';
                         }
                         else{
@@ -57,7 +57,7 @@
                 }
             }   
                 $db->close();
-                echo("<p>Connection to " . $db_name . " was closed.</p>");
+                echo("<p>Connection to " . $db_name . " closed.</p>");
         }
 
         ?>
