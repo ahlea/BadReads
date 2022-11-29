@@ -8,6 +8,9 @@
 </head>
 
 <body>
+	<?php
+        include("menu.php")
+        ?>
 	
 	<h2><u>Lindsey Arndt</u></h2>
 		<p>Created the login page and is generally awesome</p>
