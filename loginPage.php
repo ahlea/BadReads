@@ -58,6 +58,7 @@
                     "VALUES ('" . $user . "', '" . $pass . "')"; //syntax
                     
                     $db->query($sql_insert) or die('Sorry, database operation was failed');
+                    session_start();
                     $_SESSION["username"] = $user;
                     header("Location:booksearch.php");
                     exit();
@@ -96,6 +97,7 @@
                         }
                         else{
                             //echo "you are able to sign in";
+                            session_start();
                             $_SESSION["username"] = $user;
                             header("Location: booksearch.php");
                             exit();
