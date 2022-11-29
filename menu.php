@@ -18,7 +18,7 @@
                     <ul>
                         <li><a href="bookSearch.php">Search</a></li>
                         <li><a href="User_Profile.php">User Profile</a></li>
-                        <li><a <?= session_destroy(); session_unset(); ?>>Logout</a></li>
+                        <li><a <?= session_destroy(); session_unset(); ?>href="loginPage.php">Logout</a></li>
                         <li><a href="ack.html">Acknowledgements</a></li>
                     </ul>
                 </div>
