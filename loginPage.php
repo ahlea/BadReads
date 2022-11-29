@@ -105,6 +105,9 @@
                 $db->close();
                 echo("<p>Connection to " . $db_name . " was closed.</p>");
         }
+        if(isset($_SESSION["usename"])){
+            header('Location: booksearch.php');
+        }
 
         ?>
         
