@@ -35,7 +35,7 @@
             } else {
                 $title = $_POST["searchBox"];
                 $check = 0;
-                $sql = "SELECT Title FROM Book Search";
+                $sql = "SELECT Title FROM `Book Search`";
                 $result = $db->query($sql);
 
                 if ($result->num_rows > 0) {
