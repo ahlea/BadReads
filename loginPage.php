@@ -95,9 +95,6 @@
                         else{
                             echo "you are able to sign in";
                             $_SESSION["username"] = $_POST["user"];
-                            $myfile = fopen("booksearch.php", "r") or die("Unable to open file!");
-                            echo fread($myfile,filesize("booksearch.php"));
-                            fclose($myfile);
                         }
                     }
                 }
@@ -110,6 +107,9 @@
         }
         if(isset($_SESSION["usename"])){
             header('Location: booksearch.php');
+            $myfile = fopen("booksearch.php", "r") or die("Unable to open file!");
+            echo fread($myfile,filesize("booksearch.php"));
+            fclose($myfile);
         }
 
         ?>
