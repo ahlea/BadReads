@@ -1,0 +1,76 @@
+header {
+    background-color: rgba(165, 42, 42, 0.78);
+    color: antiquewhite;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    border: 10px solid brown;
+}
+body {
+    margin: 0px;
+    background-color: rgba(250, 235, 215, 0.81);
+}
+/* https://www.geeksforgeeks.org/html-course-creating-navigation-menu/?ref=lbp */
+#menu{
+	float: right;
+	width: 70%;
+	height: 100%;
+	margin: none;
+    font-size: 20px;
+}
+#menu ul{
+	text-align: center;
+	float: right;
+	margin: none;
+}
+#menu li{
+	display: inline-block;
+	padding: none;
+	margin: none;
+}	
+#menu li a, #menu li span{
+	display: inline-block;
+	padding: 0em 1.5em;
+	text-decoration: none;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 60px;
+}
+#menu li a{
+		
+	color: antiquewhite;
+}
+#menu li:hover a, #menu li span{
+	background: brown;
+	color: rgb(108, 37, 37);
+	border-left: 1px solid brown;
+	text-decoration: none;
+}
+#info {
+    margin: 50px;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(108, 65, 23);
+}
+#title {
+    padding: 20px;
+}
+#author {
+    padding: 20px;
+}
+#desc {
+    padding: 20px;
+}
+#rating {
+    padding: 20px;
+}
+#added {
+    margin: 50px;
+    font-size: 15px;
+    color: rgb(108, 65, 23);
+    text-align: center;
+}
+#added input[type=button] {
+    background-color: brown;
+    color: antiquewhite;
+    border: 3px solid rgb(133, 39, 39);
+}
