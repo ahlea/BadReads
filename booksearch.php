@@ -27,13 +27,14 @@
             $db_user = "AHLEA";
             $db_passwd = "Lindsey";
 
-            $check = 0;
+            
             $db = new mysqli("localhost", $db_user, $db_passwd, $db_name);
                           // db location,   user,    passwd,    database
             if ($db->connect_errno > 0) {
                 die('Unable to connect to database [' . $db->connect_error . ']');
             } else {
                 $title = $_POST["searchBox"];
+                $check = 0;
                 $sql = "SELECT Title FROM Book Search";
                 $result = $db->query($sql);
 
