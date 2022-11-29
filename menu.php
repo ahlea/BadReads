@@ -6,6 +6,10 @@
 
     <header id= "bar">
             <h1> 
+            <?php
+            session_start();
+            $user = $_SESSION["username"];
+            ?>
                 <div id="user">Username</div>
                 
                 <div id="title">BadReads</div>
