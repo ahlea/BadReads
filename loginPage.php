@@ -95,7 +95,7 @@
                         }
                         else{
                             echo "you are able to sign in";
-                            header("Location:booksearch.html");
+                            header("Location: booksearch.html");
                             exit();
                         }
                     }
