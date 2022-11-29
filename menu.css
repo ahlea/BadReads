@@ -1,0 +1,57 @@
+header {
+    background-color: #9BA06A;
+    color: antiquewhite;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    border: 20px solid #9BA06A;
+}
+
+#user{
+    float: right;
+    font-size: 30px;
+}
+
+#title{
+    font-size: 50px;
+}
+
+/* https://www.geeksforgeeks.org/html-course-creating-navigation-menu/?ref=lbp */
+#menu{
+	float: right;
+	width: 70%;
+	height: 100%;
+	margin: none;
+    font-size: 20px;
+}
+
+#menu ul{
+	text-align: center;
+	float: right;
+	margin: none;
+}
+
+#menu li{
+	display: inline-block;
+	padding: none;
+	margin: none;
+}	
+
+#menu li a, #menu li span{
+	display: inline-block;
+	padding: 0em 1.5em;
+	text-decoration: none;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 30px;
+}
+
+#menu li a{
+	color: antiquewhite;
+}
+
+#menu li:hover a, #menu li span{
+	background: #8c9160;
+	color: antiquewhite;
+	border-left: 1px solid #8c9160;
+	text-decoration: none;
+}
