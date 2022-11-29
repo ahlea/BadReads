@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="search.css">
 </head>
 <body>
+	<?php
+        include("menu.php")
+        ?>
+	
+	
         <div>
              <h1>Search for a Book</h1>
 
