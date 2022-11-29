@@ -1,3 +1,18 @@
 @charset "utf-8";
-/* CSS Document */
 
+.center { 
+	text-align: center;
+}
+
+h2{
+	font-family:serif;
+}
+
+p{
+	font-family:serif;
+	color:#9BA06A;
+}
+
+*{
+	background-color: #848484;
+}
