@@ -56,7 +56,7 @@
                 if($check == 0 ){
                     $sql_insert = "INSERT INTO loginTable (username, pass) ".
                     "VALUES ('" . $user . "', '" . $pass . "')"; //syntax
-
+                    
                     $db->query($sql_insert) or die('Sorry, database operation was failed');
                     header("Location:booksearch.php");
                     exit();
