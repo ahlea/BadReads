@@ -12,6 +12,7 @@
         include("menu.php")
         ?>
 	
+	<div class= box>
 	<h2><u>Lindsey Arndt</u></h2>
 		<p>Created the login page and is generally awesome</p>
 	<h2><u>Ahlea Wright</u></h2>
@@ -20,6 +21,7 @@
 		<p>Menu bar/user profile/added books to database. Looks like Angie.</p>
 	<h2><u>Angie Rybalko</u></h2>
 		<p>Book info page. Looks like Karis.</p>
+	</div>
 	
 </body>
 </html>
