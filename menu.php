@@ -6,7 +6,11 @@
 
     <header id= "bar">
             <h1> 
-                <div id="user">Username</div>
+            <?php
+            session_start();
+            $user = $_SESSION["username"];
+            ?>
+                <div id="user"><?= $user ?></div>
                 
                 <div id="title">BadReads</div>
 
@@ -14,7 +18,7 @@
                     <ul>
                         <li><a href="bookSearch.php">Search</a></li>
                         <li><a href="User_Profile.php">User Profile</a></li>
-                        <li><a href="?">Logout</a></li>
+                        <li><a href="loginPage.php"><?= session_destroy(); session_unset(); ?>Logout</a></li>
                         <li><a href="ack.html">Acknowledgements</a></li>
                     </ul>
                 </div>
