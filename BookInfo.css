@@ -5,6 +5,10 @@ header {
     font-size: 30px;
     border: 10px solid brown;
 }
+#user {
+    font-size: 20px;
+    text-align: right;
+}
 body {
     margin: 0px;
     background-color: rgba(250, 235, 215, 0.81);
@@ -47,7 +51,8 @@ body {
 }
 #info {
     margin: 50px;
-    text-align: center;
+    text-align: left;
+    /* padding: 30px; */
     font-size: 50px;
     color: rgb(108, 65, 23);
 }
@@ -67,10 +72,43 @@ body {
     margin: 50px;
     font-size: 15px;
     color: rgb(108, 65, 23);
-    text-align: center;
 }
 #added input[type=button] {
     background-color: brown;
     color: antiquewhite;
     border: 3px solid rgb(133, 39, 39);
 }
+.slider {
+    width: 14%;
+}
+#comments{
+    padding: 0%;
+    border: 15px solid brown;
+    background-color: brown;
+    color: antiquewhite;
+    font-size: 40px;
+}
+#fb{
+    padding: 20px;
+    font-size: 25px;
+}
+#form{
+    text-align: center;
+    color: rgb(78, 63, 47);
+    border: 5px solid brown;
+}
+#cStyle{
+    color: brown;
+    font-weight: 800;
+    font-size: 30px;
+}
+#cmtList{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    border-top: 3px dashed rgba(165, 42, 42, 0.436);
+    border-width: 5px;
+    color: rgb(78, 63, 47);
+}
+
+
