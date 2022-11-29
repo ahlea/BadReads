@@ -40,7 +40,7 @@
                 if ($result->num_rows > 0) {
                 while($row = $result->fetch_assoc()) {
 					echo "Title: ". $row["Title"]. "<br>";
-                    if($row["Title"] == $Title){
+                    if($row["Title"] == $title){
                         $check = 1;
                         if($row["Title"] != $title){
                             echo '<script>alert("No books titles match that search")</script>';
