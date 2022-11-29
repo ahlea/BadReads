@@ -15,6 +15,7 @@
                         <li><a href="?">Search</a></li>
                         <li><a href="User_Profile.php">User Profile</a></li>
                         <li><a href="?">Logout</a></li>
+                        <li><a href="ack.html">Acknowledgements</a></li>
                     </ul>
                 </div>
             </h1>
