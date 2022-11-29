@@ -33,8 +33,8 @@
             if ($db->connect_errno > 0) {
                 die('Unable to connect to database [' . $db->connect_error . ']');
             } else {
-                $searchBox = $_POST["searchBox"];
-                $sql = "SELECT * FROM Book Search";
+                $title = $_POST["searchBox"];
+                $sql = "SELECT Title FROM Book Search";
                 $result = $db->query($sql);
 
                 if ($result->num_rows > 0) {
@@ -42,7 +42,7 @@
 					echo "Title: ". $row["Title"]. "<br>";
                     if($row["Title"] == $Title){
                         $check = 1;
-                        if($row["Title"] != $Title){
+                        if($row["Title"] != $title){
                             echo '<script>alert("No books titles match that search")</script>';
                         }
                         else{
