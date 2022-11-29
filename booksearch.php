@@ -37,7 +37,7 @@
                 $sql = "SELECT id FROM Book Search";
                 $result = $db->query($sql);
 
-                if ($result->num_rows > 0) {
+                if ($result->num_rows > 0) {       //ASK LINDSEY
                 while($row = $result->fetch_assoc()) {
 //                    echo "username: " . $row["username"]. " - pass: " . $row["pass"]. " " . "<br>";
                     if($row["id"] == $Title){
