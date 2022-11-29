@@ -13,6 +13,7 @@
     </head>
 
     <body>
+<<<<<<< Updated upstream
 
       <header>
         <h1> <?php $_SESSION["username"] ?></h1> 
@@ -21,6 +22,12 @@
         <div class = "username">
 
         </div>
+=======
+        
+        <?php
+        include("menu.php")
+        ?>
+>>>>>>> Stashed changes
 
         <div class="tab">
             <button class="tablinks" onclick="openTab(event, 'Reading')" id= "defaultOpen">Reading</button>
