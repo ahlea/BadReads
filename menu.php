@@ -4,7 +4,7 @@
 
     <link rel="stylesheet" href="menu.css">
 
-    <header>
+    <header id= "bar">
             <h1> 
                 <div id="user">Username</div>
                 
