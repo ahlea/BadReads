@@ -33,7 +33,7 @@
             if ($db->connect_errno > 0) {
                 die('Unable to connect to database [' . $db->connect_error . ']');
             } else {
-                $searchBox = $_POST["Title"];
+                $searchBox = $_POST["searchBox"];
                 $sql = "SELECT * FROM Book Search";
                 $result = $db->query($sql);
 
