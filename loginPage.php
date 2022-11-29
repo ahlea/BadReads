@@ -58,7 +58,7 @@
                     "VALUES ('" . $user . "', '" . $pass . "')"; //syntax
 
                     $db->query($sql_insert) or die('Sorry, database operation was failed');
-                    header("Location:booksearch.html");
+                    header("Location:booksearch.php");
                     exit();
                 }
             }
@@ -106,12 +106,6 @@
             }   
                 $db->close();
                 echo("<p>Connection to " . $db_name . " was closed.</p>");
-        }
-        if(isset($_SESSION["usename"])){
-            header('Location: booksearch.php');
-            $myfile = fopen("booksearch.php", "r") or die("Unable to open file!");
-            echo fread($myfile,filesize("booksearch.php"));
-            fclose($myfile);
         }
 
         ?>
