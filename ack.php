@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="author" content="Lindsey, Ahlea, Karis, Angie">
 <title>Acknowledgement Page</title>
-<link rel="stylesheet" href="ackstyle.css">
+<link rel="stylesheet" href="BookInfo.css">
 </head>
 
 <body>

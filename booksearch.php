@@ -17,7 +17,7 @@
         $r = $db->query($sql);
         //$result = array();
         while ($row = $r->fetch_assoc()){ 
-            echo '<a href="bookInfo.php?id=' . $row['Title'] . '">' . $row['Title'] . '</a><br>';
+            echo '<a href="bookInfo.php?id=' . $row['Title'] . '">' . $row['Title'] . '</a><br><br>';
         }
     }   
     $db->close();

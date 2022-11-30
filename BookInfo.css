@@ -1,62 +1,21 @@
-header {
-    background-color: rgba(165, 42, 42, 0.78);
+*{
+    background-color: #848484;
     color: antiquewhite;
-    font-family:Arial, Helvetica, sans-serif;
+}
+#search {
+    text-align: center;
     font-size: 30px;
-    border: 10px solid brown;
 }
-#user {
-    font-size: 20px;
-    text-align: right;
-}
-body {
-    margin: 0px;
-    background-color: rgba(250, 235, 215, 0.81);
-}
-/* https://www.geeksforgeeks.org/html-course-creating-navigation-menu/?ref=lbp */
-#menu{
-	float: right;
-	width: 70%;
-	height: 100%;
-	margin: none;
-    font-size: 20px;
-}
-#menu ul{
-	text-align: center;
-	float: right;
-	margin: none;
-}
-#menu li{
-	display: inline-block;
-	padding: none;
-	margin: none;
-}	
-#menu li a, #menu li span{
-	display: inline-block;
-	padding: 0em 1.5em;
-	text-decoration: none;
-	font-weight: 600;
-	text-transform: uppercase;
-	line-height: 60px;
-}
-#menu li a{
-		
-	color: antiquewhite;
-}
-#menu li:hover a, #menu li span{
-	background: brown;
-	color: rgb(108, 37, 37);
-	border-left: 1px solid brown;
-	text-decoration: none;
+.box {
+    text-align: center;
 }
 #info {
     margin: 50px;
     text-align: left;
     /* padding: 30px; */
     font-size: 50px;
-    color: rgb(108, 65, 23);
 }
-#title {
+#booktitle {
     padding: 20px;
 }
 #author {
@@ -71,20 +30,20 @@ body {
 #added {
     margin: 50px;
     font-size: 15px;
-    color: rgb(108, 65, 23);
+    color: #DEB86E;
 }
 #added input[type=button] {
-    background-color: brown;
+    background-color: #DEB86E;
     color: antiquewhite;
-    border: 3px solid rgb(133, 39, 39);
+    border: 3px solid #DEB86E;
 }
 .slider {
     width: 14%;
 }
 #comments{
     padding: 0%;
-    border: 15px solid brown;
-    background-color: brown;
+    border: 15px solid #DEB86E;
+    background-color: #DEB86E;
     color: antiquewhite;
     font-size: 40px;
 }
@@ -94,11 +53,11 @@ body {
 }
 #form{
     text-align: center;
-    color: rgb(78, 63, 47);
-    border: 5px solid brown;
+    color: #DEB86E;
+    border: 5px solid #DEB86E;
 }
 #cStyle{
-    color: brown;
+    color: #DEB86E;
     font-weight: 800;
     font-size: 30px;
 }
@@ -106,7 +65,7 @@ body {
     list-style-type: none;
     padding: 0px;
     margin: 0px;
-    border-top: 3px dashed rgba(165, 42, 42, 0.436);
+    border-top: 3px dashed #deb96e72;
     border-width: 5px;
     color: rgb(78, 63, 47);
 }

@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="author" content="Lindsey, Ahlea, Karis, Angie">
         <title>Book Search Page</title>
+        <link rel="stylesheet" href="BookInfo.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
@@ -12,7 +13,7 @@
             include("menu.php")
             ?>
         </header>
-        <div>
+        <div id="search">
              <h1>Search for a Book</h1>
 
             <form method="POST">
