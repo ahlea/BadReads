@@ -15,6 +15,9 @@
     } else {
         $sql = "SELECT Title FROM `Book Search` WHERE Title LIKE '%" . $title . "%'";
         $r = $db->query($sql);
+        if(mysqli_num_rows($r)===0){
+            echo "No matching results";
+        }
         //$result = array();
         while ($row = $r->fetch_assoc()){ 
             echo '<a href="bookInfo.php?id=' . $row['Title'] . '">' . $row['Title'] . '</a><br><br>';
