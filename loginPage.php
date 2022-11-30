@@ -7,16 +7,16 @@
     <title>Login Page</title>
     <link rel="stylesheet" href="login.css"> <!-- a style container here is called an internal style. We took it out to link the css page which is an external cascading style sheet. -->
 </head>
-<body>
-        <div>
+<body id ="blur">
+        <div id ="clear">
              <h1>Book Talk Login</h1>
 
         <form action="loginPage.php" method="POST">
-            <input placeholder="Username" type="text" name="user" value=""><br>
-            <input placeholder="Password" type="password" name="pass" value=""><br>
+            <input id ="inputSize" placeholder="Username" type="text" name="user" value=""><br>
+            <input id ="inputSize" placeholder="Password" type="password" name="pass" value=""><br>
             <!-- <input type="button" name="inputPasswdButton" value="Login" onclick="readPasswd();"> -->
-            <input type="submit" name="submitLogin" value="Login">
-            <input type="submit" name="submitNew" value="New User">
+            <input id ="inputSize" type="submit" name="submitLogin" value="Login">
+            <input id ="inputSize" type="submit" name="submitNew" value="New User">
         </form>
         <p>created by Ahlea, Angie, Karis, and Lindsey</p>
     </div>
