@@ -17,8 +17,8 @@
              <h1>Search for a Book</h1>
 
             <form method="POST">
-                <input placeholder="Search..." type="text" name="searchBox" value=""><br>
-                <input type="submit" name="enterSearch" value="Enter">
+                <input id ="inputSize" placeholder="Search..." type="text" name="searchBox" value=""><br>
+                <input id ="inputSize" type="submit" name="enterSearch" value="Search">
                 <p id="data"></p>
             </form>
             <script>
