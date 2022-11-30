@@ -29,8 +29,14 @@
 }
 #added {
     margin: 50px;
-    font-size: 15px;
+    font-size: 25px;
     color: #DEB86E;
+}
+#buttonLibrary{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px;
+    box-sizing: border-box;
 }
 #added input[type=button] {
     background-color: #DEB86E;

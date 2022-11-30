@@ -66,7 +66,7 @@
             <div id="added">
             <!--Change button value on click
                 https://stackoverflow.com/questions/10671174/changing-button-text-onclick-->
-            <button type="button" name="add" onclick="addBook('<?php echo($book) ?>')">Add This Book to Your Library! </button>
+            <button id="buttonLibrary" type="button" name="add" onclick="addBook('<?php echo($book) ?>')">Add This Book to Your Library! </button>
             <p id="addBook">
                 <?php
                     $user = "angie";
