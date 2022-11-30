@@ -10,19 +10,19 @@
     </head>
     <body>
         <header>
-        <?php
-        include("menu.php")
-        ?>
+            <?php
+                include("menu.php");
+            ?>
         </header>
-        
         <?php
         // Report all error information on the webpage
-        //error_reporting(E_ALL);
-        //ini_set('display_errors', 1);
+        error_reporting(E_ALL);
+        ini_set('display_errors', 1);
 
         //Get value from html file using id
         //https://www.plus2net.com/php_tutorial/variables2.php
         $title = $_GET['id'];
+        echo ($user);
 
         $db_name = "CS344F22BADREADS";
         $db_user = "AHLEA";
@@ -51,7 +51,7 @@
         }
         ?>    
         <div id="info">
-            <div id="title">
+            <div id="booktitle">
                 Book Title: &nbsp; &nbsp; <?php echo($book);?>
             </div>
             <div id="author">
@@ -66,22 +66,27 @@
             <div id="added">
             <!--Change button value on click
                 https://stackoverflow.com/questions/10671174/changing-button-text-onclick-->
-            <form>
-                <input onclick="change()" type="button" name="add" value="Add This Book to Your Library!" id="add"></input>
-            </form>
-            <?php
-                if (isset($_POST["add"])) {
-                    $change = $_GET["add"];
-                    if ($change == "Add This Book to Your Library!"){
-                        $sql_insert = "UPDATE `Book Search` SET Added = Added + 1 WHERE Title = '" . $book . "'";
+            <button type="button" name="add" onclick="addBook('<?php echo($book) ?>')">Add This Book to Your Library! </button>
+            <p id="addBook">
+                <?php
+                    $user = "angie";
+                    
+                    $db = new mysqli("localhost", $db_user, $db_passwd, $db_name);
+                    // //           db location,       user,     passwd,    database
+                    if ($db->connect_errno > 0) {
+                        die('Unable to connect to database [' . $db->connect_error . ']');
+                    } else {
+                        $sql_insert2 = "SELECT Added FROM `Book Search` WHERE Title = '" . $title . "'";
+                        $result = $db->query($sql_insert2);
+                        $numUsers = $result->fetch_assoc();
+                        if (mysqli_num_rows($result)===0) {
+                            $numUsers['Added'] = 0;
+                        }
                     }
-                    else if ($change == "Remove This Book From Your Library"){
-                        $sql_insert = "UPDATE `Book Search` SET Added = Added - 1 WHERE Title = '" . $book . "'";
-                    }
-                }
-                echo("This book was added by " . $numUsers . " other users.");
-                $db->close();  
-            ?>
+                    echo 'This book was added by ' . $numUsers['Added'] . ' other users.';
+                    $db->close();
+                ?>
+            </p>
             </div>
         </div>
         <div id="fb">
@@ -104,20 +109,18 @@
                 while($rows3=$cmtResult->fetch_assoc())
                 {
             ?>
-            <ul id="cmtList">
-                <!-- FETCHING DATA FROM EACH
-                    ROW OF EVERY COLUMN -->
-                <br><li>&nbsp; &nbsp;<?php echo $rows3['Comment'];?></li><br> 
-            </ul>
+                    <ul id="cmtList">
+                        <br><li>&nbsp; &nbsp;<?php echo $rows3['Comment'];?></li><br> 
+                    </ul>
             <?php
-                }
+                    }
             ?>
             <script>
-            $("form").submit(
+            $("#form").submit(
                 function(e){
                     // prevent jQuery refresh the whole page after appending the new element. See the following page for more detail
                     // https://stackoverflow.com/questions/31357050/jquerypage-refreshes-after-appending-html-with-html
-                    //e.preventDefault();
+                    e.preventDefault();
                     <?php
                         // Report all error information on the webpage
                         error_reporting(E_ALL);

@@ -1,6 +1,10 @@
-function change() 
-{
-    var elem = document.getElementById("add");
-    if (elem.value=="Remove This Book From Your Library") elem.value = "Add This Book to Your Library!";
-    else elem.value = "Remove This Book From Your Library";
+function addBook (title) {
+    $.ajax({
+        url:"add.php",    //the page containing php script
+        type: "post",    //request type,
+        data: {title: title},
+        success:function(data){
+            $("#addBook").text(data);
+        }
+    });
 }
