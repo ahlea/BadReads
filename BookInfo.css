@@ -8,7 +8,6 @@
 }
 .box {
     text-align: center;
-    background-color: antiquewhite;
 }
 #info {
     margin: 50px;
@@ -31,7 +30,7 @@
 #added {
     margin: 50px;
     font-size: 15px;
-    color: #DEB86E;
+    color: antiquewhite;
 }
 #added input[type=button] {
     background-color: #DEB86E;
