@@ -19,7 +19,7 @@
                         <li><a href="bookSearchPage.php">Search</a></li>
                         <li><a href="User_Profile.php">User Profile</a></li>
                         <li><a href="ack.php">Acknowledgements</a></li>
-                        <li><a href="loginPage.php"<?= session_unset(); ?>>Logout</a></li>
+                        <li><a href="loginPage.php">Logout</a></li>
                     </ul>
                 </div>
             </h1>
