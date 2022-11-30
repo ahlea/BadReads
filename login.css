@@ -1,4 +1,4 @@
-body{
+#blur{
     text-align: center;
     font-size: 30px;
     font-family:'Times New Roman', Times, serif;
@@ -7,7 +7,7 @@ body{
     background-image: url('https://cdn.stocksnap.io/img-thumbs/960w/books-reading_2XTL98GVVF.jpg');
 }
 
-div{
+#clear{
     box-shadow: 8px 8px 8px 8px rgb(52, 52, 52);
     border-radius: 25px;
     margin: 170px 300px;
@@ -15,7 +15,7 @@ div{
     backdrop-filter: blur(8px);
 }
 
-input{
+#inputSize{
     width: 50%;
     padding: 12px 20px;
     margin: 8px;
