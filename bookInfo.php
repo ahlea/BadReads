@@ -69,8 +69,6 @@
             <button id="buttonLibrary" type="button" name="add" onclick="addBook('<?php echo($book) ?>')">Add This Book to Your Library! </button>
             <p id="addBook">
                 <?php
-                    $user = "angie";
-                    
                     $db = new mysqli("localhost", $db_user, $db_passwd, $db_name);
                     // //           db location,       user,     passwd,    database
                     if ($db->connect_errno > 0) {
@@ -101,7 +99,7 @@
                 <br>
                 <input type="range" min="1" max="5" class="slider" id="myRange" name="rating">
                 <br>
-                <input type="submit" name="submit" value="Submit"> 
+                <input id="#buttonLibrary" type="submit" name="submit" value="Submit"> 
             </form> 
             <p id="cStyle"> All Comments: </p>
             <?php
