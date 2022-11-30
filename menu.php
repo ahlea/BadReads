@@ -16,10 +16,10 @@
 
                 <div id="menu">
                     <ul>
-                        <li><a href="bookSearch.php">Search</a></li>
+                        <li><a href="bookSearchPage.php">Search</a></li>
                         <li><a href="User_Profile.php">User Profile</a></li>
                         <li><a href="loginPage.php"><?= session_destroy(); session_unset(); ?>Logout</a></li>
-                        <li><a href="ack.html">Acknowledgements</a></li>
+                        <li><a href="ack.php">Acknowledgements</a></li>
                     </ul>
                 </div>
             </h1>
