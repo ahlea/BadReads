@@ -26,6 +26,7 @@
         }
         else {
             echo 'Your library already contains this book! <br><br>';
+            echo '<p id="del"> <button id="buttonLibrary" type="button" name="del" onclick="delBook(\'' . $title . '\');">Delete this book from your library? </button></p><br><br>';
         }
     }
     $sql_insert2 = "SELECT Added FROM `Book Search` WHERE Title = '" . $title . "'";
