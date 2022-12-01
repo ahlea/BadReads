@@ -2,6 +2,12 @@
 #search {
     text-align: center;
     font-size: 30px;
+    padding: 0px 12px;
+    width: 50%;
+    height: 50%;
+    background-color: #406A67;
+    border: 5px solid gray;
+    margin: auto;
 }
 
 
@@ -9,6 +15,13 @@
 /* acknowledgements */
 .box {
     text-align: center;
+    font-size: 30px;
+    padding: 0px 12px;
+    width: 50%;
+    height: 50%;
+    background-color: #406A67;
+    border: 5px solid gray;
+    margin: auto;
 }
 
 
@@ -89,7 +102,7 @@
     list-style-type: none;
     padding: 0px;
     margin: 0px;
-    border-top: 3px dashed #deb96e72;
+    border-top: 3px dashed #d06c53ad;
     border-width: 5px;
     color: rgb(0, 0, 0);
 }
@@ -122,6 +135,7 @@
   text-align: left;
   cursor: pointer;
   transition: 0.3s;
+  font-weight: 700;
 }
 
 .tab button:hover {
@@ -135,18 +149,19 @@
 .tabcontent {
   float: left;
   padding: 0px 12px;
-  border: 1px solid #ccc;
   width: 50%;
   border-left: none;
   height: 725px;
-  background-color: #DEB86E;
+  background-color: #406A67;
   color: white;
   font-size: 50px;
+  font-weight: 700;
 }
 
 #myBooks {
-    font-size: 50px;
-    color: #000000;
+    font-size: 30px;
+    color: white;
+    font-weight: normal;
 }
 
 

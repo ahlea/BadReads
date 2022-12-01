@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style= "background-color: #8f8f8f; color: antiquewhite">
+<html style= "background-color: #406A67; color: white">
 
     <head>
         <meta charset="UTF-8">

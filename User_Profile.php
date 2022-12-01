@@ -26,6 +26,7 @@
     <div id="Reading" class="tabcontent">
       <div id="currentTab">
         User Profile <br><br>
+        This is your home base! <br><br>
         Use this page to view and manage the books you have added to your library.
       <div>
     </div>
