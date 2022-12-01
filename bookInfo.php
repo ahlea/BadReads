@@ -61,15 +61,15 @@
         <div id="info">
 
             <div id="booktitle">
-                Book Title: &nbsp; &nbsp; <?php echo($book);?>
+                <h3> &nbsp; &nbsp; <?php echo($book);?> </h3>
             </div>
 
             <div id="author">
-                Author: &nbsp; &nbsp; <?php echo($author);?>
+                &nbsp; &nbsp; <?php echo($author);?>
             </div>
 
             <div id="desc">
-                Description: &nbsp; &nbsp; <?php echo($blurb);?>
+                 &nbsp; &nbsp; <?php echo($blurb);?>
             </div>
 
             <div id="rating">
