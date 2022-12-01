@@ -22,7 +22,7 @@
             </form>
 
             <p>created by Ahlea, Angie, Karis, and Lindsey</p>
-
+        
         </div>
 
         <?php
@@ -36,11 +36,10 @@
                 $db_passwd = "Lindsey";
 
                 $db = new mysqli("localhost", $db_user, $db_passwd, $db_name);
-                            // db location,      user,    passwd,   database
+                            // db location,      user,    passwd, database
 
                 if ($db->connect_errno > 0) {
-                    die('Unable to connect to database [' . $db->connect_error . ']')
-
+                    die('Unable to connect to database [' . $db->connect_error . ']');
                 } else {
                     $user = $_POST["user"]; //turn into string taken from https://www.geeksforgeeks.org/php-strval-function/#:~:text=The%20strval()%20function%20is,or%20double)%20to%20a%20string.
                     $pass = $_POST["pass"];
@@ -70,9 +69,10 @@
                         exit();
                     }
                 }
+
                 $db->close();
             }
-            
+
             if (isset($_POST["submitLogin"])){
 
                 $db_name = "CS344F22BADREADS";
@@ -85,6 +85,7 @@
                 if ($db->connect_errno > 0) {
                     die('Unable to connect to database [' . $db->connect_error . ']');
                 } else {
+
                     $user = $_POST["user"]; //turn into string taken from https://www.geeksforgeeks.org/php-strval-function/#:~:text=The%20strval()%20function%20is,or%20double)%20to%20a%20string.
                     $pass = $_POST["pass"];
                     $sql = "SELECT username, pass FROM loginTable";
@@ -95,12 +96,9 @@
                         while($row = $result->fetch_assoc()) { //info about query"https://www.w3schools.com/php/php_mysql_select.asp
                             if($row["username"] == $user){
                                 $check = 1;
-
                                 if($row["pass"] != $pass){
                                     echo '<script>alert("Username does not match password")</script>';
-                                }
-
-                                else{
+                                }else{
                                     session_start();
                                     $_SESSION["username"] = $user;
                                     header("Location: bookSearchPage.php");
