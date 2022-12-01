@@ -22,7 +22,6 @@
         //Get value from html file using id
         //https://www.plus2net.com/php_tutorial/variables2.php
         $title = $_GET['id'];
-        echo ($user);
 
         $db_name = "CS344F22BADREADS";
         $db_user = "AHLEA";
