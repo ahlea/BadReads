@@ -5,7 +5,7 @@
     <meta name="author" content="Lindsey, Ahlea, Karis, Angie">
 
     <title>Login Page</title>
-    <link rel="stylesheet" href="login.css"> <!-- a style container here is called an internal style. We took it out to link the css page which is an external cascading style sheet. -->
+    <link rel="stylesheet" href="BookInfo.css"> <!-- a style container here is called an internal style. We took it out to link the css page which is an external cascading style sheet. -->
 </head>
 <body id ="blur">
         <div id ="clear">
