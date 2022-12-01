@@ -9,26 +9,26 @@
     </head>
 
     <body id ="blur">
-            <div id ="clear">
+        <div id ="clear">
 
-                <h1>Bad Reads</h1>
+            <h1>Bad Reads</h1>
 
-                <form action="loginPage.php" method="POST">
-                    <input id ="inputSize" placeholder="Username" type="text" name="user" value=""><br>
-                    <input id ="inputSize" placeholder="Password" type="password" name="pass" value=""><br>
-                    <!-- <input type="button" name="inputPasswdButton" value="Login" onclick="readPasswd();"> -->
-                    <input id ="inputSize" type="submit" name="submitLogin" value="Login">
-                    <input id ="inputSize" type="submit" name="submitNew" value="New User">
-                </form>
+            <form action="loginPage.php" method="POST">
+                <input id ="inputSize" placeholder="Username" type="text" name="user" value=""><br>
+                <input id ="inputSize" placeholder="Password" type="password" name="pass" value=""><br>
+                <!-- <input type="button" name="inputPasswdButton" value="Login" onclick="readPasswd();"> -->
+                <input id ="inputSize" type="submit" name="submitLogin" value="Login">
+                <input id ="inputSize" type="submit" name="submitNew" value="New User">
+            </form>
 
-                <p>created by Ahlea, Angie, Karis, and Lindsey</p>
+            <p>created by Ahlea, Angie, Karis, and Lindsey</p>
 
-            </div>
+        </div>
 
-            <?php
-                // Report all error information on the webpage
-                error_reporting(E_ALL);
-                ini_set('display_errors', 1);
+        <?php
+            // Report all error information on the webpage
+            error_reporting(E_ALL);
+            ini_set('display_errors', 1);
 
             if (isset($_POST["submitNew"])){
                 $db_name = "CS344F22BADREADS";
@@ -36,9 +36,11 @@
                 $db_passwd = "Lindsey";
 
                 $db = new mysqli("localhost", $db_user, $db_passwd, $db_name);
-                            // db location,      user,    passwd, database
+                            // db location,      user,    passwd,   database
+
                 if ($db->connect_errno > 0) {
-                    die('Unable to connect to database [' . $db->connect_error . ']');
+                    die('Unable to connect to database [' . $db->connect_error . ']')
+
                 } else {
                     $user = $_POST["user"]; //turn into string taken from https://www.geeksforgeeks.org/php-strval-function/#:~:text=The%20strval()%20function%20is,or%20double)%20to%20a%20string.
                     $pass = $_POST["pass"];
@@ -57,6 +59,7 @@
                             }
                         }
                     }
+
                     if($check == 0 ){
                         $sql_insert = "INSERT INTO loginTable (username, pass) ".
                         "VALUES ('" . $user . "', '" . $pass . "')"; //syntax
@@ -78,10 +81,10 @@
 
                 $check = 0; //check will be >0 if the username is correct and the password does not match
                 $db = new mysqli("localhost", $db_user, $db_passwd, $db_name);
+
                 if ($db->connect_errno > 0) {
                     die('Unable to connect to database [' . $db->connect_error . ']');
                 } else {
-
                     $user = $_POST["user"]; //turn into string taken from https://www.geeksforgeeks.org/php-strval-function/#:~:text=The%20strval()%20function%20is,or%20double)%20to%20a%20string.
                     $pass = $_POST["pass"];
                     $sql = "SELECT username, pass FROM loginTable";
@@ -92,9 +95,11 @@
                         while($row = $result->fetch_assoc()) { //info about query"https://www.w3schools.com/php/php_mysql_select.asp
                             if($row["username"] == $user){
                                 $check = 1;
+
                                 if($row["pass"] != $pass){
                                     echo '<script>alert("Username does not match password")</script>';
                                 }
+
                                 else{
                                     session_start();
                                     $_SESSION["username"] = $user;
@@ -107,6 +112,6 @@
                 }   
                 $db->close();
             }
-            ?>
+        ?>
     </body>
 </html>
