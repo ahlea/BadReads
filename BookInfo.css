@@ -126,6 +126,10 @@
   color: white;
 }
 
+#myBooks {
+    font-size: 50px;
+}
+
 /*login page*/
 
 #blur{

@@ -1,10 +1,9 @@
 <?php
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+
     session_start();
     $user = $_SESSION["username"];
-    // Report all error information on the webpage
-    // error_reporting(E_ALL);
-    // ini_set('display_errors', 1);
-    
     $db_name = "CS344F22BADREADS";
     $db_user = "AHLEA";
     $db_passwd = "Lindsey";
@@ -16,7 +15,7 @@
     if ($db->connect_errno > 0) {
         die('Unable to connect to database [' . $db->connect_error . ']');
     } else {
-        $sql = "SELECT user FROM `Likes` WHERE user = '" . $user . "AND book = '" . $title . "'"; 
+        $sql = "SELECT user FROM `Likes` WHERE user = '" . $user . "' AND book = '" . $title . "'"; 
         $r = $db->query($sql);
         if(mysqli_num_rows($r)===0){
             $sql_insert = "UPDATE `Book Search` SET Added = Added + 1 WHERE Title = '" . $title . "'";

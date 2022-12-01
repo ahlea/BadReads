@@ -1,64 +1,35 @@
 <!DOCTYPE html>
 
 <html lang = "en">
-
     <head>
         <meta charset="UTF-8">
 
         <meta name="author" content="Karis Plath">
 
         <title> Profile </title>
-
+        <script src="userProfile.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="BookInfo.css">
     </head>
 
     <body>
         
         <?php
-        include("menu.php")
+          include("menu.php")
         ?>
 
-        <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'Reading')" id= "defaultOpen">Reading</button>
-            <button class="tablinks" onclick="openTab(event, 'Read')">Read</button>
-            <button class="tablinks" onclick="openTab(event, 'Wishlist')">Wishlist</button>
+          <div class="tab">
+            <button class="tablinks" type="button" onclick="showBooks('Reading')">Reading</button>
+            <button class="tablinks" type="button" onclick="showBooks('Read')">Read</button>
+            <button class="tablinks" type="button" onclick="showBooks('Wishlist')">Wishlist</button>
           </div>
           
           <div id="Reading" class="tabcontent">
-            <h3>Reading</h3>
-            <p>Curently Reading</p>
-          </div>
-          
-          <div id="Read" class="tabcontent">
-            <h3>Read</h3>
-            <p>Already Read</p>
-          </div>
-          
-          <div id="Wishlist" class="tabcontent">
-            <h3>Wishlist</h3>
-            <p>Want to Read</p>
+            <div id="currentTab">
+              User Profile <br><br>
+              Use this page to view and manage the books you have added to your library.
+            <div>
           </div>
         </div>
-
-        <script>
-          function openTab(evt, tabName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-              tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-              tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
-          }
-          
-          // Get the element with id="defaultOpen" and click on it
-          document.getElementById("defaultOpen").click();
-          </script>
-        
     </body>
-
 </html>
