@@ -1,46 +1,57 @@
-/* *{
-    background-color: #8f8f8f;
-    color: antiquewhite;
-} */
-
+/* search page */
 #search {
     text-align: center;
     font-size: 30px;
 }
+
+
+
+/* acknowledgements */
 .box {
     text-align: center;
 }
+
+
+
+/* book info */
 #info {
     margin: 50px;
     text-align: left;
-    /* padding: 30px; */
     font-size: 50px;
 }
+
 #booktitle {
     padding: 20px;
 }
+
 #author {
     padding: 20px;
 }
+
 #desc {
     padding: 20px;
 }
+
 #rating {
     padding: 20px;
 }
+
 #added {
     margin: 50px;
     font-size: 25px;
     color: #DEB86E;
 }
+
 #added input[type=button] {
     background-color: #DEB86E;
     color: antiquewhite;
     border: 3px solid #DEB86E;
 }
+
 .slider {
     width: 14%;
 }
+
 #comments{
     padding: 0%;
     border: 15px solid #D06C53;
@@ -48,26 +59,31 @@
     color: antiquewhite;
     font-size: 40px;
 }
+
 #fb{
     padding: 20px;
     font-size: 25px;
 }
+
 #form{
     text-align: center;
     color: antiquewhite;
     border: 8px solid #D06C53;
 }
+
 #buttonLibrary{
     width: 30%;
     padding: 12px 20px;
     margin: 8px;
     box-sizing: border-box;
 }
+
 #cStyle{
     color: #DEB86E;
     font-weight: 800;
     font-size: 30px;
 }
+
 #cmtList{
     list-style-type: none;
     padding: 0px;
@@ -76,6 +92,7 @@
     border-width: 5px;
     color: rgb(78, 63, 47);
 }
+
 #inputSize{
     width: 50%;
     padding: 12px 20px;
@@ -83,7 +100,9 @@
     box-sizing: border-box;
 }
 
-/*Tab on User_Profile*/
+
+
+/*Profile*/
 .tab {
   float: left;
   border: 1px solid #929292;
@@ -91,7 +110,6 @@
   width: 30%;
 }
 
-/* Style the buttons that are used to open the tab content */
 .tab button {
   display: block;
   background-color: inherit;
@@ -105,30 +123,29 @@
   transition: 0.3s;
 }
 
-/* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #929292;
 }
 
-/* Create an active/current "tab button" class */
 .tab button.active {
   background-color: #8f8e8e;
 }
 
-/* Style the tab content */
 .tabcontent {
   float: left;
   padding: 0px 12px;
   border: 1px solid #ccc;
   width: 50%;
   border-left: none;
-  height: 300px;
+  height: 725px;
   background-color: #DEB86E;
   color: white;
+  font-size: 50px;
 }
 
 #myBooks {
     font-size: 50px;
+    color: antiquewhite;
 }
 
 
