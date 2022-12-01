@@ -1,7 +1,8 @@
-*{
+/* *{
     background-color: #8f8f8f;
     color: antiquewhite;
-}
+} */
+
 #search {
     text-align: center;
     font-size: 30px;
@@ -130,8 +131,9 @@
     font-size: 50px;
 }
 
-/*login page*/
 
+
+/*login page*/
 #blur{
     text-align: center;
     font-size: 30px;
@@ -155,6 +157,8 @@
     margin: 8px;
     box-sizing: border-box;
 }
+
+
 
 /*menu bar*/
 #bar{
