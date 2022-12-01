@@ -20,8 +20,6 @@
                 <input id ="inputSize" type="submit" name="submitLogin" value="Login">
                 <input id ="inputSize" type="submit" name="submitNew" value="New User">
             </form>
-
-            <p>created by Ahlea, Angie, Karis, and Lindsey</p>
         
         </div>
 
