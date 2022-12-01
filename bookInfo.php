@@ -23,12 +23,14 @@
         //https://www.plus2net.com/php_tutorial/variables2.php
         $title = $_GET['id'];
 
+        $wishlist = 'Wishlist';
+        $reading = 'Reading';
+        $read = 'Read';
         $db_name = "CS344F22BADREADS";
         $db_user = "AHLEA";
         $db_passwd = "Lindsey";
 
         $db = new mysqli("localhost", $db_user, $db_passwd, $db_name);
-                    // db location,      user,    passwd, database
         if ($db->connect_errno > 0) {
             die('Unable to connect to database [' . $db->connect_error . ']');
         } else {
@@ -63,13 +65,15 @@
                 Rating: &nbsp; &nbsp; <?php echo($rating[0]);?>
             </div>
             <div id="added">
+                Add this book to: <br>
             <!--Change button value on click
                 https://stackoverflow.com/questions/10671174/changing-button-text-onclick-->
-            <button id="buttonLibrary" type="button" name="add" onclick="addBook('<?php echo($book) ?>')">Add This Book to Your Library! </button>
+            <button id="buttonLibrary" type="button" name="add" onclick="addBook('<?php echo $book ; ?>', '<?php echo $wishlist; ?>')">Wishlist </button>
+            <button id="buttonLibrary" type="button" name="add" onclick="addBook('<?php echo $book ; ?>', '<?php echo $reading; ?>')">Reading </button>
+            <button id="buttonLibrary" type="button" name="add" onclick="addBook('<?php echo $book ; ?>', '<?php echo $read; ?>')">Read </button>
             <p id="addBook">
                 <?php
                     $db = new mysqli("localhost", $db_user, $db_passwd, $db_name);
-                    // //           db location,       user,     passwd,    database
                     if ($db->connect_errno > 0) {
                         die('Unable to connect to database [' . $db->connect_error . ']');
                     } else {
@@ -110,7 +114,7 @@
                         <br><li>&nbsp; &nbsp;<?php echo $rows3['Comment'];?></li><br> 
                     </ul>
             <?php
-                    }
+                }
             ?>
             <script>
             $("#form").submit(
@@ -132,7 +136,6 @@
                         $rate = $_POST["rating"];
 
                         $db = new mysqli("localhost", $db_user, $db_passwd, $db_name);
-                        // //           db location,       user,     passwd,    database
                         if ($db->connect_errno > 0) {
                             die('Unable to connect to database [' . $db->connect_error . ']');
                         } else {
@@ -143,6 +146,25 @@
                     ?>
                 });
             </script>
+                <?php
+                $db = new mysqli("localhost", $db_user, $db_passwd, $db_name);
+                if ($db->connect_errno > 0) {
+                die('Unable to connect to database [' . $db->connect_error . ']');
+                } else {
+                    $print = "";
+                    $sql_cmt = "SELECT Comment FROM `Comments` WHERE Title = '" . $title . "'";
+                    $cmtResult = $db->query($sql_cmt) or die('Sorry, database operation was failed');
+                    while($rows3=$cmtResult->fetch_assoc()){
+                        $print = $rows3['Comment'];
+                    }
+                    ?>
+                    <ul id="cmtList">
+                        <br><li>&nbsp; &nbsp;<?php echo $print;?></li><br> 
+                    </ul>
+                    <?php
+                    $db->close();
+                }
+                ?>
         </div>
     </body>
 </html>
