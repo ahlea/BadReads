@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Lindsey, Ahlea, Karis, Angie">
-
     <title>Login Page</title>
     <link rel="stylesheet" href="BookInfo.css"> <!-- a style container here is called an internal style. We took it out to link the css page which is an external cascading style sheet. -->
 </head>
 <body id ="blur">
         <div id ="clear">
-             <h1>Book Talk Login</h1>
+
+             <h1>Bad Reads</h1>
 
         <form action="loginPage.php" method="POST">
             <input id ="inputSize" placeholder="Username" type="text" name="user" value=""><br>
