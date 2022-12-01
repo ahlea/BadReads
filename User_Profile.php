@@ -9,7 +9,7 @@
 
         <title> Profile </title>
 
-        <link rel="stylesheet" href="Profile.css">
+        <link rel="stylesheet" href="BookInfo.css">
     </head>
 
     <body>

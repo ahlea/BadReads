@@ -2,7 +2,7 @@
 
 <html lang = "en">
 
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="BookInfo.css">
 
     <header id= "bar">
             <h1> 
