@@ -79,7 +79,7 @@
 }
 
 #cStyle{
-    color: #D06C53;
+    color: #000000;
     font-weight: 800;
     font-size: 30px;
 }
@@ -188,7 +188,6 @@
     width: 100%;
     top: 0;
     position: fixed;
-    margin: 0px auto;
 }
 
 #user{
