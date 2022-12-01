@@ -26,7 +26,7 @@
             echo $type . '<br>';
         }
         while ($row = $r->fetch_assoc()){ 
-            echo '<a id="myBooks" href="bookInfo.php?id=' . $row['book'] . '">' . $row['book'] . '</a><br><br>';
+            echo '<a id="myBooks" href="bookInfo.php?id=' . $row['book'] . '">' . $row['book'] . '</a><br>';
         }
     }   
     $db->close();

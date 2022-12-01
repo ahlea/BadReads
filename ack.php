@@ -1,5 +1,5 @@
 <!doctype html>
-<html style= "background-color: #8f8f8f; color: antiquewhite">
+<html style= "background-image: url('https://ecy1979.files.wordpress.com/2018/12/library-b694b8c4b0334227a4d614158cc1deb6.jpg'); background-size: cover; background-repeat: no-repeat; color: white;">
 	<head>
 		<meta charset="utf-8">
 		<meta name="author" content="Lindsey, Ahlea, Karis, Angie">
@@ -54,15 +54,11 @@
 				<li>loginPage.php</li>
 				<li>menu.php</li>
 			</p>
-		</div>
 
-		<div>
 			<p>
 				* All authors contributed to creating and populating the tables in the database used for the 
 				back end portion of the project.
 			</p>
 		</div>
-		
-		
 	</body>
 </html>
