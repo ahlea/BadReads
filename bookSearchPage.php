@@ -11,11 +11,9 @@
 
     <body>
 
-        <header>
             <?php
             include("menu.php")
             ?>
-        </header>
 
         <div id="search">
             <h1>Search for a Book</h1>

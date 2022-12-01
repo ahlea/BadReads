@@ -24,5 +24,9 @@
                 </div>
             </h1>
     </header>
+    <header>
+        <p id = "content"> </p>
+    </header>
+
 
 </html>

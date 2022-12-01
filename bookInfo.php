@@ -12,11 +12,9 @@
 
     <body>
 
-        <header>
             <?php
                 include("menu.php");
             ?>
-        </header>
 
         <?php
             // Report all error information on the webpage
