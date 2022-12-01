@@ -16,7 +16,6 @@
             <form action="loginPage.php" method="POST">
                 <input id ="inputSize" placeholder="Username" type="text" name="user" value=""><br>
                 <input id ="inputSize" placeholder="Password" type="password" name="pass" value=""><br>
-                <!-- <input type="button" name="inputPasswdButton" value="Login" onclick="readPasswd();"> -->
                 <input id ="inputSize" type="submit" name="submitLogin" value="Login">
                 <input id ="inputSize" type="submit" name="submitNew" value="New User">
             </form>
@@ -43,7 +42,6 @@
                     $pass = $_POST["pass"];
 
                     $check = 0; //if this is >0 then there is already a usersame with that user input
-
                     $sql = "SELECT username FROM loginTable";
                     $result = $db->query($sql);
 
@@ -67,7 +65,6 @@
                         exit();
                     }
                 }
-
                 $db->close();
             }
 
@@ -103,6 +100,9 @@
                                     exit();
                                 }
                             }
+                        }
+                        if($check == 0){
+                            echo '<script>alert("Username does not exist")</script>';
                         }
                     }
                 }   
