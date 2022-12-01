@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html style= "background-color: #8f8f8f; color: antiquewhite">
+
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Lindsey, Ahlea, Karis, Angie">
@@ -7,20 +8,24 @@
         <link rel="stylesheet" href="BookInfo.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
+
     <body>
+
         <header>
             <?php
             include("menu.php")
             ?>
         </header>
+
         <div id="search">
-             <h1>Search for a Book</h1>
+            <h1>Search for a Book</h1>
 
             <form method="POST">
                 <input id ="inputSize" placeholder="Search..." type="text" name="searchBox" value=""><br>
                 <input id ="inputSize" type="submit" name="enterSearch" value="Search">
                 <p id="data"></p>
             </form>
+
             <script>
                 $("form").submit(
                     function(e){
