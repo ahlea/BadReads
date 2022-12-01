@@ -27,7 +27,10 @@
 			<li>ack.php</li>
 			<li>bookInfo.css</li>
 			<li>booksearch.php</li>
+<<<<<<< Updated upstream
 			<li>login.css</li>
+=======
+>>>>>>> Stashed changes
 			<li>loginPage.php</li>
 			<li>menu.php</li>
 		</p>
@@ -36,9 +39,13 @@
 			<li>ack.php</li>
 			<li>bookInfo.php</li>
 			<li>booksearch.php</li>
+<<<<<<< Updated upstream
 			<li>menu.css</li>
 			<li>menu.php</li>
 			<li>Profile.css</li>
+=======
+			<li>menu.php</li>
+>>>>>>> Stashed changes
 			<li>User_Profile.php</li>
 		</p>
 	<h2><u>Angie Rybalko</u></h2>
@@ -51,10 +58,23 @@
 			<li>bookInfo.css</li>
 			<li>booksearch.php</li>
 			<li>loginPage.php</li>
+<<<<<<< Updated upstream
 			<li>menu.css</li>
 			<li>menu.php</li>
 		</p>
 	</div>
+=======
+			<li>menu.php</li>
+		</p>
+	</div>
+	<div>
+		<p>
+			* All authors contributed to creating and populating the tables in the database used for the 
+			back end portion of the project.
+		</p>
+	</div>
+	
+>>>>>>> Stashed changes
 	
 </body>
 </html>
