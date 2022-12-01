@@ -63,7 +63,7 @@
             </div>
 
             <div id="author">
-                &nbsp; &nbsp; <?php echo($author);?>
+               By:  &nbsp; &nbsp; <?php echo($author);?>
             </div>
 
             <div id="desc">
