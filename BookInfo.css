@@ -39,13 +39,13 @@
 #added {
     margin: 50px;
     font-size: 25px;
-    color: #DEB86E;
+    color: #ffffff;
 }
 
 #added input[type=button] {
-    background-color: #DEB86E;
-    color: antiquewhite;
-    border: 3px solid #DEB86E;
+    background-color: #BB9574;
+    color: rgb(255, 255, 255);
+    border: 3px solid #BB9574;
 }
 
 .slider {
@@ -56,7 +56,7 @@
     padding: 0%;
     border: 15px solid #D06C53;
     background-color: #D06C53;
-    color: antiquewhite;
+    color: #000000;
     font-size: 40px;
 }
 
@@ -67,7 +67,7 @@
 
 #form{
     text-align: center;
-    color: antiquewhite;
+    color: rgb(255, 255, 255);
     border: 8px solid #D06C53;
 }
 
@@ -79,7 +79,7 @@
 }
 
 #cStyle{
-    color: #DEB86E;
+    color: #D06C53;
     font-weight: 800;
     font-size: 30px;
 }
@@ -90,7 +90,7 @@
     margin: 0px;
     border-top: 3px dashed #deb96e72;
     border-width: 5px;
-    color: rgb(78, 63, 47);
+    color: rgb(0, 0, 0);
 }
 
 #inputSize{
@@ -145,7 +145,7 @@
 
 #myBooks {
     font-size: 50px;
-    color: antiquewhite;
+    color: #000000;
 }
 
 
@@ -173,29 +173,31 @@
     padding: 12px 20px;
     margin: 8px;
     box-sizing: border-box;
+    border: 2px solid rgba(250, 235, 215, 0);
+    border-radius: 12px;
 }
 
 
 
 /*menu bar*/
 #bar{
-    background-color: #6EA386;
-    color: antiquewhite;
+    background-color: #ffffff;
+    color: #406A67;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 30px;
-    border: 10px solid #6EA386;
+    border: 10px solid #ffffff;
 	padding-bottom: 40px;
 }
 
 #user{
     float: right;
     font-size: 30px;
-	background-color: #6EA386;
+	background-color: #ffffff;
 }
 
 #title{
     font-size: 50px;
-	background-color: #6EA386;
+	background-color: #ffffff;
 }
 
 /* https://www.geeksforgeeks.org/html-course-creating-navigation-menu/?ref=lbp */
@@ -205,14 +207,14 @@
 	height: 100%;
 	margin: none;
     font-size: 20px;
-	background-color: #6EA386;
+	background-color: #ffffff;
 }
 
 #menu ul{
 	text-align: center;
 	float: right;
 	margin: none;
-	background-color: #6EA386;
+	background-color: #ffffff;
 }
 
 #menu li{
@@ -232,13 +234,13 @@
 }
 
 #menu li a{
-	color: antiquewhite;
-	background-color: #6EA386;
+	color: rgb(0, 0, 0);
+	background-color: #ffffff;
 }
 
 #menu li:hover a, #menu li span{
-	background: #6EA386;
-	color: antiquewhite;
-	border-left: 1px solid #6EA386;
+	background: #ffffff;
+	color: #000000;
+	border-left: 1px solid #ffffff;
 	text-decoration: none;
 }

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html style= "background-color: #8f8f8f; color: antiquewhite">
+<html style= "background-image: url('https://ecy1979.files.wordpress.com/2018/12/library-b694b8c4b0334227a4d614158cc1deb6.jpg'); background-size: cover; background-repeat: no-repeat; color: white;">
 
   <head>
     <meta charset="UTF-8">
