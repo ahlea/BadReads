@@ -1,3 +1,5 @@
 # CS-344-Project
 
-Ahlea, Angie, Lindsey, Karis
+Start by opening the Login Page and creating an account
+
+By: Ahlea, Angie, Lindsey, Karis
