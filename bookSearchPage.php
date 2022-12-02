@@ -10,17 +10,17 @@
     </head>
 
     <body>
-
-            <?php
+        <?php
             include("menu.php")
-            ?>
+        ?>
 
         <div id="search">
             <h1>Search for a Book</h1>
 
             <form method="POST">
-                <input id ="inputSize" placeholder="Search... Press enter to view a list of all the books" type="text" name="searchBox" value=""><br>
-                <input id ="inputSize" type="submit" name="enterSearch" value="Search">
+                <input id ="inputSize" placeholder="Search... " type="text" name="searchBox" value=""><br>
+                <input id ="inputSize" type="submit" name="enterSearch" value="Search"><br>
+                <p id="hint"> *Press the Search button to view available books* </p>
                 <p id="data"></p>
             </form>
 
