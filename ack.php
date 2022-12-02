@@ -16,48 +16,30 @@
 		<div class= box>
 			<h2><u>Lindsey Arndt</u></h2>
 			<p>
-				<li>bookInfo.php</li>
-				<li>bookSearchPage.php</li>
-				<li>bookInfo.css</li>
-				<li>booksearch.php</li>
-				<li>menu.php</li>
-				
+				<li>Login page</li>
+				<li>Session/logout</li>	
 			</p>
 
 			<h2><u>Ahlea Wright</u></h2>
 			<p>
-				<li>ack.php</li>
-				<li>bookInfo.css</li>
-				<li>booksearch.php</li>
-				<li>loginPage.php</li>
-				<li>menu.php</li>
+				<li>Search page</li>
+				<li>Acknowledgements page</li>
 			</p>
 
 			<h2><u>Karis Plath</u></h2>
 			<p>
-				<li>ack.php</li>
-				<li>bookInfo.php</li>
-				<li>booksearch.php</li>
-				<li>menu.php</li>
-				<li>User_Profile.php</li>
+				<li>User profile page</li>
+				<li>Menu bar</li>
 			</p>
 
 			<h2><u>Angie Rybalko</u></h2>
 			<p>
-				<li>ack.php</li>
-				<li>add.php</li>
-				<li>bookInfo.js</li>
-				<li>bookInfo.php</li>
-				<li>bookSearchPage.php</li>
-				<li>bookInfo.css</li>
-				<li>booksearch.php</li>
-				<li>loginPage.php</li>
-				<li>menu.php</li>
+				<li>Book info page</li>
+				<li>Connection to search page</li>
 			</p>
 
 			<p>
-				* All authors contributed to creating and populating the tables in the database used for the 
-				back end portion of the project.
+				* Since we used GitHub to keep all files in one place while allowing easy editing access, every author worked on every file used in the project. Additionally, the database tables were created, populated, and edited by everyone as well.
 			</p>
 		</div>
 	</body>
