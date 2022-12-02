@@ -75,6 +75,12 @@
     background-color: #D06C53;
     color: #000000;
     font-size: 40px;
+    text-align: center;
+}
+
+#cmInput {
+    background: transparent;
+    border-color: #294443;
 }
 
 #fb{
@@ -86,14 +92,22 @@
     text-align: center;
     color: rgb(255, 255, 255);
     border: 8px solid #D06C53;
+    width: 50%;
+    margin: auto;
+}
+
+#myRange {
+    width: 28%;
+    background: transparent;
 }
 
 #buttonLibrary{
-    width: 35%;
+    width: 25%;
     padding: 15px 30px;
     margin: 8px;
     box-sizing: border-box;
     text-size-adjust: 40%;
+    background-color:#D06C53;
 }
 
 #cStyle{
