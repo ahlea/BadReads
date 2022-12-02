@@ -98,10 +98,13 @@
     font-size: 30px;
 }
 
-#cmtList{
-    list-style-type: none;
+#cmtList {
     padding: 0px;
     margin: 0px;
+}
+
+#eachCmt {
+    list-style-type: none;
     border-top: 3px dashed #d06c53ad;
     border-width: 5px;
     color: rgb(0, 0, 0);

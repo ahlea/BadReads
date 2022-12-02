@@ -10,7 +10,7 @@
             session_start();
             $user = $_SESSION["username"];
             ?>
-                <div id="user">Welcome, <?= $user ?>!</div>
+                <div id="user">Welcome, <?= $user ?>! &nbsp; </div>
                 
                 <div id="title">BadReads</div>
 

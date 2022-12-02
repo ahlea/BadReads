@@ -18,3 +18,25 @@ function delBook (ttl) {
         }
     });
 }
+function rate (title) {
+    $.ajax({
+        url:"rating.php",    //the page containing php script
+        type: "post",    //request type,
+        data: {title: title},
+        success:function(data){
+            $("#rating").html(data);
+        }
+    });
+}
+function cmt(title) {
+    $.ajax({
+        url:"comment.php",    //the page containing php script
+        type: "post",    //request type,
+        data: {title: title},
+        success:function(data){
+            $("#cmtList").html(data);
+        }
+    });
+}
+
+
