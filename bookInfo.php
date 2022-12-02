@@ -113,14 +113,14 @@
             <form id="form" method="POST">
                 <input type="hidden" name="title" value="<?=$title;?>"/>
                 Leave a comment: <br>
-                <textarea id="cmInput" name="comment" rows="5" cols="40" required></textarea> 
+                <textarea name="comment" rows="5" cols="40" required></textarea> 
                 <br>
                 Leave a rating: <br>
-                1 &nbsp; &nbsp; 2 &nbsp; &nbsp; 3 &nbsp; &nbsp; 4 &nbsp; &nbsp; 5 
+                &nbsp; 1 &nbsp; &nbsp; 2 &nbsp; &nbsp; 3 &nbsp; &nbsp; 4 &nbsp; &nbsp; 5 
                 <br>
                 <input type="range" min="1" max="5" class="slider" id="myRange" name="rating">
                 <br>
-                <input id="buttonLibrary" type="submit" name="submit" value="Submit"><br><br> 
+                <input id="#buttonLibrary" type="submit" name="submit" value="Submit"> 
             </form> 
 
             <p id="cStyle"> All Comments: </p>
