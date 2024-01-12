@@ -1,5 +1,5 @@
 # CS-344-Project
 
-Start by opening the Login Page and creating an account
+Our little version of a book rating system. Books put in manually.
 
 By: Ahlea, Angie, Lindsey, Karis
